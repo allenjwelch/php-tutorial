@@ -9,7 +9,12 @@
 <body>
 
 	<?php
-		$myName = "your name";
+		$myName = 'Allen';
+		/*
+			- variables case sensitive
+			- cannot begin with integers
+			- can only include letters, numbers and _
+		*/
 		echo "Hello $myName, welcome to the world of PHP!";
 	?>
 

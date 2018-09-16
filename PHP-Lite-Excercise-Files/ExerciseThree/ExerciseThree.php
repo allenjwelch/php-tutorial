@@ -9,12 +9,30 @@
 <body>
 
 	<?php
+
+		/*
+			- echo and print do the same thing
+			- however, print is a () and can only take one parameter but can these can be concatenated using '.'
+			- ex: print"this"."is"."a"."single"."print"."statement";
+			- print also returns a value
+
+			- single quotes vs double quotes
+			- '' will not interpret the value of vars enclosed within them
+			- "" will interpret the value of vars and special characters
+		*/
+
+		$myVar = "PHP";
+		echo 'I am learning $myVar.';
+		echo '<br>';
+		echo "I am learning $myVar.";
+		echo '<br>';
+
 		$UserName = "kirk";
 		$Password = "primedirective";
 
 		$testuser = "picard";
 		$testpassword = "makeitso";
-		
+
 		if ($testuser == $UserName && $testpassword == $Password)
 		{
 			echo "Live long and prosper!<br>";
@@ -23,9 +41,9 @@
 		{
 			echo "Please try again<br>";
 		}
-	
+
 		// or
-				
+
 		if ($testuser == $UserName)
 		{
 			if ($testpassword == $Password)
@@ -39,10 +57,10 @@
 		}
 		else
 		{
-			echo "Please try again<br>";			
+			echo "Please try again<br>";
 		}
-		
-	
+
+
 
 		?>
 

@@ -13,7 +13,7 @@
 		{
 			echo $count . "<br>";
 		}
-		
+
 		echo "************<br>";
 		$n = 0;
 		while ($n < 10)
@@ -21,6 +21,11 @@
 			echo $n * $n . "<br>";
 			$n++;
 		}
+
+		/*
+			- break statement - ends loop
+			- continue statement - will skip over the current iteration
+		*/
 	?>
 
 </body>

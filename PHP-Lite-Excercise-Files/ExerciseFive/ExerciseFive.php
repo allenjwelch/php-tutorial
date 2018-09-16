@@ -9,11 +9,20 @@
 <body>
 
 	<?php
+
+		/*
+			3 types of arrays in PHP:
+				- indexed array - numerically indexed (begins at 0)
+				- associative arrays - dictionary data structure
+				- multi-dimensional arrays - array of arrays
+			array(), NOT array []
+		*/
 		$usernames = array("zsmith" =>"devious","rtam"=>"simon","q" => "continuum","kirk" => "primedirective","sconnor" => "fatethatwemake");
-		
+		// example of an associative array
+
 		$testuser = "sconnor";
 		$testpassword = "fatethatwemake";
-		
+
 		foreach ($usernames as $user => $password)
 		{
 			if ($user == $testuser)
@@ -21,16 +30,17 @@
 				if ($password == $testpassword)
 				{
 					echo "Welcome<br>";
+					print_r($usernames);
 				}
 				else
 				{
 					echo "Please try again<br>";
 				}
 			}
-			
+
 		}
-	
-	
+
+
 	?>
 
 </body>
