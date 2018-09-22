@@ -6,16 +6,16 @@
 </head>
 <body>
 
-<?php 
-
+<?php
+// index, condition, increment
 for($counter = 0; $counter < 10; $counter++){
 
     echo $counter . "<br>" ;
 
 }
-    
-    
-    
+
+
+
 ?>
 
 
