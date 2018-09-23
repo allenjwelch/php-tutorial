@@ -8,21 +8,20 @@
 
 <?php
 
+// www.php.net/ref.strings
+
 $string = "Hello student do you like the class";
 
-echo strlen($string);
+echo strlen($string); // finds length of string
 
 echo "<br>";
 
-echo strtoupper($string);
+echo strtoupper($string); // changes to uppercase
 
 echo "<br>";
 
-echo strtolower($string);
+echo strtolower($string); // changes to lowercase
 
-
-
-    
 ?>
 
 </body>

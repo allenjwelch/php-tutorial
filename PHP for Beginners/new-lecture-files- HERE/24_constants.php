@@ -5,27 +5,29 @@
     <title>Document</title>
 </head>
 <body>
-   
-<?php 
+
+<?php
 $number = 10;
 $number = 1000;
 
 $number = "Edwin";
 echo $number . "<br>";
 
-define("NAME", 1000);
+define("NAME", 1000); // similar to const in js but variable must be assigned using the 'define' function
+// functionName(variableName, value)
+
 
 echo NAME;
 
 
 
-    
-    
-    
+
+
+
 ?>
-   
- 
-   
-    
+
+
+
+
 </body>
 </html>

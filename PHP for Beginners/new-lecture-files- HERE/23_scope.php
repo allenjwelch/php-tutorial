@@ -5,13 +5,13 @@
     <title>Document</title>
 </head>
 <body>
-<?php 
+<?php
 
 $x = "outside"; // global
 
 function convert() {
 global $x;
-$x = "inside"; // local 
+$x = "inside"; // local
 
 }
 
@@ -26,8 +26,8 @@ echo $x;
 
 echo $x;
 
-    
-    
+
+
 ?>
 
 </body>

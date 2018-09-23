@@ -6,21 +6,22 @@
 </head>
 <body>
 
-<?php 
+<?php
 
+// www.php.net/manual/en/ref.array.php
 $list = [343,34,323,23,54,232,453];
 
-echo max($list);
-
-echo "<br>";
-    
-echo min($list);
-
+echo max($list); // finds largest integer in array
 
 echo "<br>";
 
-sort($list);
-    
+echo min($list); // finds smallest integer in array
+
+
+echo "<br>";
+
+sort($list); // sorts array from small to large
+
 print_r($list);
 
 
