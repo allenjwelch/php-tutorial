@@ -1,32 +1,11 @@
+<?php include "db.php"; ?> 
+<?php include "functions.php"; ?>
 
 <?php
 
-  $username = $_POST['username'];
-    $password = $_POST['password'];
-
-    $connection = mysqli_connect('localhost', 'root', 'root', 'loginapp');
-
-      if($connection) {
-
-      echo "We are connected";
-
-      } else {
-
-      die("Database connection failed");
-
-      }
-
-  $query = "INSERT INTO users(username, password) "; 
-  $query .= "VALUES ('$username', '$password') ";
-
-  $result = mysqli_query($connection, $query);
-
-  if(!$result) {
-
-    die('Query FAILED' . mysqli_error());
-
+  if(isset($_POST['submit'])) {
+    createUser(); 
   }
-
 
 ?>
 
@@ -34,7 +13,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Create</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 </head>
 <body>

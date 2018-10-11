@@ -3,7 +3,7 @@
 
 <?php
 if(isset($_POST['submit'])) {
-  UpdateTable(); 
+  deleteRows(); 
 }
 
 ?>
@@ -13,7 +13,7 @@ if(isset($_POST['submit'])) {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Update</title>
+    <title>Delete</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 </head>
 <body>
@@ -21,7 +21,7 @@ if(isset($_POST['submit'])) {
 
     <div class="col-sm-6">
         
-      <form action="login_update.php" method="post">
+      <form action="login_delete.php" method="post">
         <div class="form-group">
           <label for="username">Username</label>
           <input type="text" name="username" class="form-control">
